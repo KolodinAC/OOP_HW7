@@ -38,11 +38,6 @@ public class ComplexNumber extends ComplexAdapter {
 
     @Override
     public model.ComplexNumber multiplication(Number arg2) {
-    /*
-    z1*z2= (a1+b1i)*(a2+b2i) =
-    = a1*a2 + a1*b2i + b1*a2i +(b1*b2)i^2 =
-    = (a1*a2 - b1*b2) + (a1*b2 + a2*b1)i
-     */
         model.ComplexNumber z1 = this;
         model.ComplexNumber z2 = (model.ComplexNumber) arg2;
         int nextA = (z1.getMaterialPart() * z2.getMaterialPart()) - (z1.getImaginary() * z2.getImaginary());
@@ -54,7 +49,6 @@ public class ComplexNumber extends ComplexAdapter {
 
     @Override
     public model.ComplexNumber subtraction(Number arg2) {
-        //z1- z2= (a1+b1i) - (a2+b1i) = (a1-a2) + (b1-b2)i
         model.ComplexNumber z1 = this;
         model.ComplexNumber z2 = (model.ComplexNumber) arg2;
         int nextA = z1.getMaterialPart() - z2.getMaterialPart();
@@ -66,7 +60,6 @@ public class ComplexNumber extends ComplexAdapter {
 
     @Override
     public ComplexNumber sum(Number arg2) {
-        //z1+z2= (a1+b1i) + (a2+b2i) = (a1+a2) + (b1+b2)i
         model.ComplexNumber z1 = this;
         model.ComplexNumber z2 = (model.ComplexNumber) arg2;
         int nextA = z1.getMaterialPart() + z2.getMaterialPart();

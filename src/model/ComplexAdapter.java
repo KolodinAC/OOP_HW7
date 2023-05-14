@@ -1,6 +1,6 @@
 package model;
 
-public class ComplexAdapter extends Number /*implements Calculatable*/{
+public class ComplexAdapter extends Number {
     @Override
     public Number subtraction(Number arg2) {
         return null;

@@ -60,9 +60,8 @@ public class Gui {
 
     private void multiplication() {
         if (temp.look() instanceof ComplexNumber){
-            System.out.println("Давайте создадим второе число.");
+            System.out.println("Cоздаем второе число.");
             log("*");
-            //Number res = temp.fromCash().multiplication(this.createComplNum());
             Number res = calc.multiplication((Number) temp.fromCash(),this.createComplNum());
             temp.toCash(res);
             log("=");
@@ -73,7 +72,7 @@ public class Gui {
 
     private void subtraction() {
         if (temp.look() instanceof ComplexNumber) {
-            System.out.println("Давайте создадим второе число.");
+            System.out.println("Cоздаем второе число.");
             log("-");
             //Number res = temp.fromCash().subtraction(this.createComplNum());
             Number res = calc.subtraction((Number) temp.fromCash(),this.createComplNum());
@@ -96,9 +95,8 @@ public class Gui {
 
     public void sum(){
         if (temp.look() instanceof ComplexNumber){
-            System.out.println("Давайте создадим второе число.");
+            System.out.println("Cоздаем второе число.");
             log("+");
-            //Number res = temp.fromCash().sum(this.createComplNum());
             Number res = calc.summ((Number) temp.fromCash(),this.createComplNum());
             log("=");
             log(res.toString());
